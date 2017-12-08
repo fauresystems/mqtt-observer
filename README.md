@@ -83,3 +83,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 This software was created for Escape Room 2.0 project at [Live Escape Grenoble, France](https://www.live-escape.net/).
 
+## Screenshot
+
+![My image](https://raw.githubusercontent.com/fauresystems/mqtt-observer/master/mqtt-observer-screenshot.png)
+
