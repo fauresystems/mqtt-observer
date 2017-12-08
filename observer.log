@@ -1,0 +1,21 @@
+[08/12/2017 15:50:25.832] INFO - Started
+[08/12/2017 15:50:25.833] INFO - Current session : Affichage des correspondants
+[08/12/2017 15:50:26.078] INFO - Added observation : All messsages
+[08/12/2017 15:50:26.081] INFO - Added observation : Correspondants
+[08/12/2017 15:50:26.083] INFO - MQTT server host : 192.168.1.20
+[08/12/2017 15:50:26.084] INFO - MQTT server port : 1883
+[08/12/2017 15:50:26.084] INFO - MQTT clientid : Observer/{a9e83bf7-20bc-4963-9a0e-31be2777871d}
+[08/12/2017 15:50:26.087] INFO - May connect to MQTT server...
+[08/12/2017 15:50:26.098] INFO - Connect to MQTT server
+[08/12/2017 15:50:26.123] INFO - MQTT connecting
+[08/12/2017 15:50:27.114] INFO - MQTT connected
+[08/12/2017 15:50:27.120] INFO - MQTT subscribing to 1 : Live/Lab/#
+[08/12/2017 15:50:27.124] INFO - MQTT susbcribed to : 1 with QoS (0,)
+[08/12/2017 15:50:27.168] INFO - New correspondent in 'All messsages' : Arduino Lab
+[08/12/2017 15:50:27.170] INFO - New topic in All messsages : Live/Lab/Arduino Lab/outbox
+[08/12/2017 15:50:27.180] INFO - New correspondent in 'Correspondants' : Arduino Lab
+[08/12/2017 15:50:27.182] INFO - New topic in Correspondants : Live/Lab/Arduino Lab/outbox
+[08/12/2017 15:50:27.184] INFO - New correspondent in 'All messsages' : Teleprinter
+[08/12/2017 15:50:27.186] INFO - New topic in All messsages : Live/Lab/Teleprinter/led
+[08/12/2017 15:50:27.190] INFO - New correspondent in 'Correspondants' : Teleprinter
+[08/12/2017 15:50:27.192] INFO - New topic in Correspondants : Live/Lab/Teleprinter/led
