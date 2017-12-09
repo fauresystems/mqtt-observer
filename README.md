@@ -1,8 +1,20 @@
 
 
+
 # Project Title
 
 Observer app to watch messages exchanged on MQTT server.
+
+## Features
+
+ - To start, set MQTT server host, port and root topic to subscribe.
+ - Create new observations:
+	 - to filter out some topics
+	 - to filter out some messages starting with specific strings
+	 - to display fool topic or extracted correspondent
+- Modify topic syntax regex to extract which correspondent send or receive messages.
+- Identify forgotten topics with remaining wills, and select wills to reset.
+- Save server and observation settings as sessions, to retrieve further. 
 
 ## Getting Started
 
@@ -85,5 +97,5 @@ This software was created for Escape Room 2.0 project at [Live Escape Grenoble, 
 
 ## Screenshot
 
-![My image](https://raw.githubusercontent.com/fauresystems/mqtt-observer/master/mqtt-observer-screenshot.png)
+![My image](https://raw.githubusercontent.com/fauresystems/mqtt-observer/master/screenshots/mqtt-observer-screenshot.png)
 
