@@ -1,7 +1,7 @@
 
 
 
-# Project Title
+# MQTT Observer
 
 Observer app to watch messages exchanged on MQTT server.
 
@@ -13,7 +13,7 @@ Observer app to watch messages exchanged on MQTT server.
 	 - to filter out some messages starting with specific strings
 	 - to display fool topic or extracted correspondent
 - Modify topic syntax regex to extract which correspondent send or receive messages.
-- Identify forgotten topics with remaining wills, and select wills to reset.
+- Clean wills: identify forgotten topics with remaining wills, and select wills to reset.
 - Save server and observation settings as sessions, to retrieve further. 
 
 ## Getting Started
