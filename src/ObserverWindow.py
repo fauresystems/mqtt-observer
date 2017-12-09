@@ -120,7 +120,7 @@ class ObserverWindow(QMainWindow):
 		QApplication.desktop().resized.connect(self.restoreWindow)
 		
 		self.setWindowTitle(self._session)
-		self.setWindowIcon(QIcon('view-eye.svg'))
+		self.setWindowIcon(QIcon(':/view-eye.svg'))
 
 		self._tabWidget = QTabWidget()
 		self._cloudLabel = QLabel()
@@ -167,38 +167,14 @@ class ObserverWindow(QMainWindow):
 			self.addDisplay(i)
 		reg.endGroup()
 	
-		QCoreApplication.processEvents()
+		self.changeConnectionState(ConnectionState.DISCONNECTED)
 
-		try:
-			self.changeConnectionState(ConnectionState.DISCONNECTED)
-			self._logger.info("{0} : {1}".format(self.tr("MQTT server host"), self._mqttServerHost))
-			self._logger.info("{0} : {1}".format(self.tr("MQTT server port"), self._mqttServerPort))
-			self._logger.info("{0} : {1}".format(self.tr("MQTT clientid"), self._mqttClient._client_id.decode("latin1")))
-			self._mqttClient.on_connect = self.mqttOnConnect
-			self._mqttClient.on_disconnect = self.mqttOnDisconnect
-			self._mqttClient.on_log = self.mqttOnLog
-			self._mqttClient.on_message = self.mqttOnMessage
-			self._mqttClient.on_publish = self.mqttOnPublish
-			self._mqttClient.on_subscribe = self.mqttOnSubscribe
-			self._mqttClient.on_unsubscribe = self.mqttOnUnsubscribe
-			Timer(0, self.layoutLoadSettings).start()
-			Timer(0, self.mqttConnect).start()
-		except:
-			self._logger.error(self.tr("Can't start MQTT (check definitions in .INI)"))
-			msgbox = QMessageBox()
-			msgbox.setWindowTitle(self.tr("Observer"))
-			msgbox.setWindowIcon(QIcon('view-eye.svg'))        
-			msgbox.setText(self.tr("Failed to set MQTT client !") + "<br><br><i>" + self.tr("Application will be closed.") + "</i><br>")
-			msgbox.setStandardButtons(QMessageBox.Close)
-			msgbox.setAttribute(Qt.WA_DeleteOnClose)
-			msgbox.setWindowFlags(msgbox.windowFlags() & ~Qt.WindowContextHelpButtonHint)		
-			msgbox.button(QMessageBox.Close).setText(self.tr("Close"))
-			msgbox.resize(QSize(400, 300))
-			msgbox.exec()
-			self._logger.info(self.tr("Done"))
-			Timer(0, QCoreApplication.quit).start()
+		self._logger.info("{0} : {1}".format(self.tr("MQTT server host"), self._mqttServerHost))
+		self._logger.info("{0} : {1}".format(self.tr("MQTT server port"), self._mqttServerPort))
+		self._logger.info("{0} : {1}".format(self.tr("MQTT clientid"), self._mqttClient._client_id.decode("latin1")))
 
-		self._logger.debug("Connection state = " + str(self._connectionState))
+		Timer(0, self.layoutLoadSettings).start()
+		Timer(0, self.start).start()
 
 	#__________________________________________________________________
 	@pyqtSlot()
@@ -268,7 +244,7 @@ class ObserverWindow(QMainWindow):
 							self._logger.warning(self.tr("Can't rename observation '") +  filter["observation"] + self.tr("' : '") + filter["name"] + self.tr("' already exists"))
 							msgbox = QMessageBox()
 							msgbox.setWindowTitle(self.tr("Observer"))
-							msgbox.setWindowIcon(QIcon('magnifier-black.svg'))        
+							msgbox.setWindowIcon(QIcon(':/magnifier-black.svg'))        
 							msgbox.setText(self.tr("Ignore apply filter !") + "<br><br><i>" + self.tr("Can't rename observation (name already in use).") + "</i><br>")
 							msgbox.setStandardButtons(QMessageBox.Close)
 							msgbox.setAttribute(Qt.WA_DeleteOnClose)
@@ -906,6 +882,35 @@ class ObserverWindow(QMainWindow):
 			self._logger.error(self.tr("Failed to compile topic default regex :") + regexDefault)
 			self._logger.debug(e)
 		
+	#__________________________________________________________________
+	def start(self):	
+
+		try:
+			self._mqttClient.on_connect = self.mqttOnConnect
+			self._mqttClient.on_disconnect = self.mqttOnDisconnect
+			self._mqttClient.on_log = self.mqttOnLog
+			self._mqttClient.on_message = self.mqttOnMessage
+			self._mqttClient.on_publish = self.mqttOnPublish
+			self._mqttClient.on_subscribe = self.mqttOnSubscribe
+			self._mqttClient.on_unsubscribe = self.mqttOnUnsubscribe
+			Timer(0, self.mqttConnect).start()
+		except:
+			self._logger.error(self.tr("Can't start MQTT (check definitions in .INI)"))
+			msgbox = QMessageBox()
+			msgbox.setWindowTitle(self.tr("Observer"))
+			msgbox.setWindowIcon(QIcon(':/view-eye.svg'))        
+			msgbox.setText(self.tr("Failed to set MQTT client !") + "<br><br><i>" + self.tr("Application will be closed.") + "</i><br>")
+			msgbox.setStandardButtons(QMessageBox.Close)
+			msgbox.setAttribute(Qt.WA_DeleteOnClose)
+			msgbox.setWindowFlags(msgbox.windowFlags() & ~Qt.WindowContextHelpButtonHint)		
+			msgbox.button(QMessageBox.Close).setText(self.tr("Close"))
+			msgbox.resize(QSize(400, 300))
+			msgbox.exec()
+			self._logger.info(self.tr("Done"))
+			Timer(0, QCoreApplication.quit).start()
+
+		self._logger.debug("Connection state = " + str(self._connectionState))
+
 	#__________________________________________________________________
 	def switchConnection(self):
 

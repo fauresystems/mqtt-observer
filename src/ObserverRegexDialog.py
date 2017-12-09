@@ -56,7 +56,7 @@ class ObserverRegexDialog(QDialog):
 
 		self.setWindowFlags(self.windowFlags() & ~Qt.WindowContextHelpButtonHint)
 		self.setWindowTitle(self.tr("Correspondent in topic"))
-		self.setWindowIcon(QIcon('settings.svg'))        
+		self.setWindowIcon(QIcon(':/settings.svg'))        
 		self.setStyleSheet("QLineEdit { font-family: courier new, courier, monospace, lucinda console; }")
 
 		reg.beginGroup(self._session)

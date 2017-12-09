@@ -53,7 +53,7 @@ class ObserverWillsDialog(QDialog):
 
 		self.setWindowFlags(self.windowFlags() & ~Qt.WindowContextHelpButtonHint)
 		self.setWindowTitle(self.tr("Topics will reset"))
-		self.setWindowIcon(QIcon('settings.svg'))
+		self.setWindowIcon(QIcon(':/settings.svg'))
 
 		self._topicsCheckboxes = []
 

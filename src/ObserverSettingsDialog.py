@@ -56,7 +56,7 @@ class ObserverSettingsDialog(QDialog):
 
 		self.setWindowFlags(self.windowFlags() & ~Qt.WindowContextHelpButtonHint)
 		self.setWindowTitle(self.tr("Observer settings"))
-		self.setWindowIcon(QIcon('settings.svg'))        
+		self.setWindowIcon(QIcon(':/settings.svg'))        
 
 		self._mqttServerInput = QLineEdit()
 		self._mqttPortInput = QLineEdit()

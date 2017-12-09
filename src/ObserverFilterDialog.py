@@ -66,7 +66,7 @@ class ObserverFilterDialog(QDialog):
 
 		self.setWindowFlags(self.windowFlags() & ~Qt.WindowContextHelpButtonHint)
 		self.setWindowTitle(self.tr("Observer filter"))
-		self.setWindowIcon(QIcon('magnifier-black.svg'))
+		self.setWindowIcon(QIcon(':/magnifier-black.svg'))
 
 		self._nameInput = QLineEdit(self._observation)
 		self._filter1Input = QLineEdit()

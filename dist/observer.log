@@ -4,7 +4,7 @@ Added observation : All messsages
 Added observation : Correspondants
 MQTT server host : 192.168.1.20
 MQTT server port : 1883
-MQTT clientid : Observer/{23987cc1-2789-4212-b99c-f8c4f8fbc06c}
+MQTT clientid : Observer/{b0d44284-9a45-4093-96d2-647c44051e93}
 May connect to MQTT server...
 Connect to MQTT server
 MQTT connecting
@@ -19,24 +19,6 @@ New correspondent in 'All messsages' : Teleprinter
 New topic in All messsages : Live/Lab/Teleprinter/led
 New correspondent in 'Correspondants' : Teleprinter
 New topic in Correspondants : Live/Lab/Teleprinter/led
-New topic in All messsages : Live/Lab/Arduino Lab/inbox
-New topic in Correspondants : Live/Lab/Arduino Lab/inbox
-New correspondent in 'All messsages' : Raspberry Lab
-New topic in All messsages : Live/Lab/Raspberry Lab/inbox
-New correspondent in 'Correspondants' : Raspberry Lab
-New topic in Correspondants : Live/Lab/Raspberry Lab/inbox
-New correspondent in 'All messsages' : Arduberry Lab
-New topic in All messsages : Live/Lab/Arduberry Lab/inbox
-New correspondent in 'Correspondants' : Arduberry Lab
-New topic in Correspondants : Live/Lab/Arduberry Lab/inbox
-New correspondent in 'All messsages' : Ziggy
-New topic in All messsages : Live/Lab/Ziggy/inbox
-New correspondent in 'Correspondants' : Ziggy
-New topic in Correspondants : Live/Lab/Ziggy/inbox
-New correspondent in 'All messsages' : Supervisor
-New topic in All messsages : Live/Lab/Supervisor/lang
-New correspondent in 'Correspondants' : Supervisor
-New topic in Correspondants : Live/Lab/Supervisor/lang
 Done
 Disconnected from MQTT server
 MQTT disconnected on request from 192.168.1.20:1883
