@@ -29,8 +29,8 @@ Development is done on Windows 10 x64 computer under Visual Studio Community wit
 Python 3, SIP, PyQt5 and paho-mqtt packages are required:
 
 ```
-PyQt5 and paho-mqtt installation
-================================
+PyQt5 and paho-mqtt installation on Windows
+===========================================
 
 $ pip3 install SIP
 $ pip3 install PyQt5
@@ -41,6 +41,20 @@ May upgrade if already installed:
 $ pip3 install SIP --upgrade
 $ pip3 install PyQt5 --upgrade 
 $ pip3 install paho-mqtt --upgrade
+```
+
+```
+PyQt5 and paho-mqtt installation on Linux (Raspberry Pi)
+========================================================
+
+$ sudo apt-get update
+$ sudo apt-get install qt5-default pyqt5-dev pyqt5-dev-tools
+
+$ pip3 install paho-mqtt
+
+May install Eric IDE:
+
+$ sudo apt-get install eric
 ```
 
 ## Deployment
@@ -97,5 +111,7 @@ This software was created for Escape Room 2.0 project at [Live Escape Grenoble, 
 
 ## Screenshot
 
-![My image](https://raw.githubusercontent.com/fauresystems/mqtt-observer/master/screenshots/mqtt-observer-screenshot.png)
+![Running on Windows](https://raw.githubusercontent.com/fauresystems/mqtt-observer/master/screenshots/mqtt-observer-screenshot.png)
 
+
+![Running on Raspberry](https://raw.githubusercontent.com/fauresystems/mqtt-observer/master/screenshots/mqtt-observer-on-raspberry-pi3.png)

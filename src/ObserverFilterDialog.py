@@ -28,13 +28,12 @@
 ###############################################################################
 
 
-from PyQt5.QtCore import QCoreApplication, Qt, pyqtSignal, pyqtSlot, QSettings, QSize, QPoint
-from PyQt5.QtWidgets import (QApplication, QDialog, QHBoxLayout, QVBoxLayout, QGridLayout,
+from PyQt5.QtCore import Qt, pyqtSignal, pyqtSlot, QSettings
+from PyQt5.QtWidgets import (QDialog, QHBoxLayout, QVBoxLayout, QGridLayout,
 	QFrame, QLabel, QPushButton, QSizePolicy, QGroupBox, QLineEdit, QCheckBox, QWidget,
 	QTabWidget, QComboBox, QRadioButton, QScrollArea)
-from PyQt5.QtGui import QIcon, QImage, QFont, QPalette
+from PyQt5.QtGui import QIcon, QPalette
 
-import logging
 from enum import Enum
 
 

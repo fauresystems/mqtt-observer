@@ -1,24 +1,20 @@
-[09/12/2017 05:55:52.684] INFO - Started
-[09/12/2017 05:55:52.685] INFO - Current session : Affichage des correspondants
-[09/12/2017 05:55:52.855] INFO - Added observation : All messsages
-[09/12/2017 05:55:52.857] INFO - Added observation : Correspondants
-[09/12/2017 05:55:52.859] INFO - MQTT server host : 192.168.1.20
-[09/12/2017 05:55:52.860] INFO - MQTT server port : 1883
-[09/12/2017 05:55:52.860] INFO - MQTT clientid : Observer/{dd66e3d1-cd45-4ce1-b297-5b8ea2c0f62e}
-[09/12/2017 05:55:52.883] INFO - May connect to MQTT server...
-[09/12/2017 05:55:52.884] INFO - Connect to MQTT server
-[09/12/2017 05:55:52.900] INFO - MQTT connecting
-[09/12/2017 05:55:53.890] INFO - MQTT connected
-[09/12/2017 05:55:53.896] INFO - MQTT subscribing to 1 : Live/Lab/#
-[09/12/2017 05:55:53.900] INFO - MQTT susbcribed to : 1 with QoS (0,)
-[09/12/2017 05:55:53.943] INFO - New correspondent in 'All messsages' : Arduino Lab
-[09/12/2017 05:55:53.945] INFO - New topic in All messsages : Live/Lab/Arduino Lab/outbox
-[09/12/2017 05:55:53.955] INFO - New correspondent in 'Correspondants' : Arduino Lab
-[09/12/2017 05:55:53.957] INFO - New topic in Correspondants : Live/Lab/Arduino Lab/outbox
-[09/12/2017 05:55:53.960] INFO - New correspondent in 'All messsages' : Teleprinter
-[09/12/2017 05:55:53.961] INFO - New topic in All messsages : Live/Lab/Teleprinter/led
-[09/12/2017 05:55:53.966] INFO - New correspondent in 'Correspondants' : Teleprinter
-[09/12/2017 05:55:53.968] INFO - New topic in Correspondants : Live/Lab/Teleprinter/led
-[09/12/2017 05:56:40.312] INFO - Done
-[09/12/2017 05:56:40.317] INFO - Disconnected from MQTT server
-[09/12/2017 05:56:40.318] INFO - MQTT disconnected on request from 192.168.1.20:1883
+[19/12/2017 11:50:03.724] INFO - Started
+[19/12/2017 11:50:03.725] INFO - Current session : Affichage des correspondants
+[19/12/2017 11:50:03.910] INFO - Added observation : All messsages
+[19/12/2017 11:50:03.913] INFO - Added observation : Correspondants
+[19/12/2017 11:50:03.914] INFO - MQTT server host : 192.168.1.20
+[19/12/2017 11:50:03.915] INFO - MQTT server port : 1883
+[19/12/2017 11:50:03.915] INFO - MQTT clientid : Observer/{7aa63a2c-be43-4544-a77e-137a547f0acd}
+[19/12/2017 11:50:03.939] INFO - May connect to MQTT server...
+[19/12/2017 11:50:03.940] INFO - Connect to MQTT server
+[19/12/2017 11:50:03.956] INFO - MQTT connecting
+[19/12/2017 11:50:04.946] INFO - MQTT connected
+[19/12/2017 11:50:04.951] INFO - MQTT subscribing to 1 : Live/Lab/#
+[19/12/2017 11:50:04.955] INFO - MQTT susbcribed to : 1 with QoS (0,)
+[19/12/2017 11:50:04.997] INFO - New correspondent in 'All messsages' : Teleprinter
+[19/12/2017 11:50:04.998] INFO - New topic in All messsages : Live/Lab/Teleprinter/led
+[19/12/2017 11:50:05.008] INFO - New correspondent in 'Correspondants' : Teleprinter
+[19/12/2017 11:50:05.010] INFO - New topic in Correspondants : Live/Lab/Teleprinter/led
+[19/12/2017 11:50:05.513] INFO - Done
+[19/12/2017 11:50:05.519] INFO - Disconnected from MQTT server
+[19/12/2017 11:50:05.520] INFO - MQTT disconnected on request from 192.168.1.20:1883

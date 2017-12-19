@@ -28,9 +28,9 @@
 ###############################################################################
 
 
-from PyQt5.QtCore import QCoreApplication, Qt, pyqtSignal, pyqtSlot, QSettings, QSize, QPoint
-from PyQt5.QtWidgets import (QApplication, QDialog, QHBoxLayout, QVBoxLayout, QGridLayout,
-	QFrame, QLabel, QPushButton, QSizePolicy, QGroupBox, QLineEdit, QCheckBox, QSpacerItem)
+from PyQt5.QtCore import Qt, pyqtSlot, QSettings
+from PyQt5.QtWidgets import (QDialog, QHBoxLayout, QVBoxLayout, QGridLayout,
+	QLabel, QPushButton, QGroupBox, QLineEdit, QSpacerItem)
 from PyQt5.QtGui import QIcon, QImage, QFont
 
 import logging, re

@@ -28,12 +28,11 @@
 ###############################################################################
 
 
-from PyQt5.QtCore import QCoreApplication, Qt, pyqtSignal, pyqtSlot, QSettings, QSize, QPoint
-from PyQt5.QtWidgets import (QApplication, QDialog, QHBoxLayout, QVBoxLayout, QGridLayout,
-	QFrame, QLabel, QPushButton, QSizePolicy, QGroupBox, QLineEdit, QCheckBox, QComboBox)
-from PyQt5.QtGui import QIcon, QImage, QFont
+from PyQt5.QtCore import Qt, pyqtSignal, pyqtSlot, QSettings
+from PyQt5.QtWidgets import (QDialog, QHBoxLayout, QVBoxLayout, QGridLayout,
+	QLabel, QPushButton, QGroupBox, QLineEdit, QComboBox)
+from PyQt5.QtGui import QIcon
 
-import logging
 from threading import Timer
 
 

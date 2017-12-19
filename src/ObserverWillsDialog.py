@@ -28,13 +28,11 @@
 ###############################################################################
 
 
-from PyQt5.QtCore import QCoreApplication, Qt, pyqtSignal, pyqtSlot, QSettings, QSize, QPoint
-from PyQt5.QtWidgets import (QApplication, QDialog, QHBoxLayout, QVBoxLayout, QGridLayout,
-	QFrame, QLabel, QPushButton, QSizePolicy, QGroupBox, QLineEdit, QCheckBox, QWidget,
-	QTabWidget, QComboBox, QRadioButton, QScrollArea)
-from PyQt5.QtGui import QIcon, QImage, QFont, QPalette
-
-import logging
+from PyQt5.QtCore import Qt, pyqtSignal, pyqtSlot, QSettings
+from PyQt5.QtWidgets import (QDialog, QHBoxLayout, QVBoxLayout,
+	QFrame, QLabel, QPushButton, QCheckBox, QWidget, QTabWidget, 
+	QScrollArea)
+from PyQt5.QtGui import QIcon, QPalette
 
 
 class ObserverWillsDialog(QDialog):

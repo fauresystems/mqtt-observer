@@ -34,9 +34,8 @@ from PyQt5.QtCore import QSysInfo, Qt, QUuid, QTranslator, QLocale, QDir
 from ObserverWindow import ObserverWindow
 
 import paho.mqtt.client as mqtt
-import sys, os
+import sys, os, platform
 import logging, logging.config
-import threading
 import argparse
 
 os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"  # for 4k display
@@ -76,8 +75,11 @@ else:
 
 app = QApplication(sys.argv)
 
-if QSysInfo.windowsVersion() > QSysInfo.WV_WINDOWS7:
-	QApplication.setStyle(QStyleFactory.create("Fusion"))
+if platform.system() == 'Windows':
+	if QSysInfo.windowsVersion() > QSysInfo.WV_WINDOWS7:
+		QApplication.setStyle(QStyleFactory.create("Fusion"))
+	else:
+		QApplication.setStyle(QStyleFactoryscreate("Windows"))
 else:
 	QApplication.setStyle(QStyleFactoryscreate("Windows"))
 
@@ -86,7 +88,8 @@ app.setApplicationName("MQTT Observer")
 app.setOrganizationDomain("xscape.io")
 app.setOrganizationName("xscape.io")
 
-app.setAttribute(Qt.AA_EnableHighDpiScaling) # for 4K display
+if platform.system() == 'Windows':
+	app.setAttribute(Qt.AA_EnableHighDpiScaling) # for 4K display
 
 translator = QTranslator()
 if args['french']:
