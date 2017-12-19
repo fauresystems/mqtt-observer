@@ -7,7 +7,8 @@ Observer app to watch messages exchanged on MQTT server.
 
 ## Features
 
- - To start, set MQTT server host, port and root topic to subscribe.
+ - To start, run `python3 ./src/main.py`
+ - Set MQTT server host, port and root topic to subscribe.
  - Create new observations:
 	 - to filter out some topics
 	 - to filter out some messages starting with specific strings
