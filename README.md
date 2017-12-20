@@ -3,7 +3,7 @@
 
 # MQTT Observer
 
-Observer app to watch messages exchanged on MQTT server.
+MQTT client GUI to observe messages exchanged on MQTT server.
 
 ## Features
 
