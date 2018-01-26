@@ -85,8 +85,8 @@ else:
 
 app.setApplicationDisplayName("MQTT Observer")
 app.setApplicationName("MQTT Observer")
-app.setOrganizationDomain("xscape.io")
-app.setOrganizationName("xscape.io")
+app.setOrganizationDomain("xcape.io")
+app.setOrganizationName("xcape.io")
 
 if platform.system() == 'Windows':
 	app.setAttribute(Qt.AA_EnableHighDpiScaling) # for 4K display
