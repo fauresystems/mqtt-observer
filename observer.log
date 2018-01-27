@@ -1,20 +1,28 @@
-[19/12/2017 11:50:03.724] INFO - Started
-[19/12/2017 11:50:03.725] INFO - Current session : Affichage des correspondants
-[19/12/2017 11:50:03.910] INFO - Added observation : All messsages
-[19/12/2017 11:50:03.913] INFO - Added observation : Correspondants
-[19/12/2017 11:50:03.914] INFO - MQTT server host : 192.168.1.20
-[19/12/2017 11:50:03.915] INFO - MQTT server port : 1883
-[19/12/2017 11:50:03.915] INFO - MQTT clientid : Observer/{7aa63a2c-be43-4544-a77e-137a547f0acd}
-[19/12/2017 11:50:03.939] INFO - May connect to MQTT server...
-[19/12/2017 11:50:03.940] INFO - Connect to MQTT server
-[19/12/2017 11:50:03.956] INFO - MQTT connecting
-[19/12/2017 11:50:04.946] INFO - MQTT connected
-[19/12/2017 11:50:04.951] INFO - MQTT subscribing to 1 : Live/Lab/#
-[19/12/2017 11:50:04.955] INFO - MQTT susbcribed to : 1 with QoS (0,)
-[19/12/2017 11:50:04.997] INFO - New correspondent in 'All messsages' : Teleprinter
-[19/12/2017 11:50:04.998] INFO - New topic in All messsages : Live/Lab/Teleprinter/led
-[19/12/2017 11:50:05.008] INFO - New correspondent in 'Correspondants' : Teleprinter
-[19/12/2017 11:50:05.010] INFO - New topic in Correspondants : Live/Lab/Teleprinter/led
-[19/12/2017 11:50:05.513] INFO - Done
-[19/12/2017 11:50:05.519] INFO - Disconnected from MQTT server
-[19/12/2017 11:50:05.520] INFO - MQTT disconnected on request from 192.168.1.20:1883
+[27/01/2018 18:13:56.176] INFO - Started
+[27/01/2018 18:13:56.177] INFO - Current session : Default session
+[27/01/2018 18:13:56.553] INFO - Added observation : All messsages
+[27/01/2018 18:13:56.557] INFO - MQTT server host : 192.168.1.20
+[27/01/2018 18:13:56.559] INFO - MQTT server port : 1883
+[27/01/2018 18:13:56.560] INFO - MQTT clientid : Observer/{dc71f205-3414-49c0-855a-be00d9e7bc0d}
+[27/01/2018 18:13:56.605] INFO - May connect to MQTT server...
+[27/01/2018 18:13:56.606] INFO - Connect to MQTT server
+[27/01/2018 18:13:56.622] INFO - MQTT connecting
+[27/01/2018 18:13:57.611] INFO - MQTT connected
+[27/01/2018 18:13:57.617] INFO - MQTT subscribing to 1 : #
+[27/01/2018 18:13:57.620] INFO - MQTT susbcribed to : 1 with QoS (0,)
+[27/01/2018 18:13:57.663] INFO - New correspondent in 'All messsages' : Raspberry Exorcist
+[27/01/2018 18:13:57.666] INFO - New topic in All messsages : Live/Lab/Raspberry Exorcist/outbox
+[27/01/2018 18:13:57.674] INFO - New correspondent in 'All messsages' : Raspberry Lab
+[27/01/2018 18:13:57.675] INFO - New topic in All messsages : Live/Lab/Raspberry Lab/outbox
+[27/01/2018 18:13:57.719] INFO - New topic in All messsages : Live/Esprits/Raspberry Exorcist/outbox
+[27/01/2018 18:13:57.722] INFO - New correspondent in 'All messsages' : Raspberry Alphabet
+[27/01/2018 18:13:57.723] INFO - New topic in All messsages : Live/Esprits/Raspberry Alphabet/outbox
+[27/01/2018 18:13:57.726] INFO - New correspondent in 'All messsages' : Raspberry Ultrasonic
+[27/01/2018 18:13:57.728] INFO - New topic in All messsages : Live/Esprits/Raspberry Ultrasonic/outbox
+[27/01/2018 18:13:57.731] INFO - New correspondent in 'All messsages' : Arduino Relay
+[27/01/2018 18:13:57.732] INFO - New topic in All messsages : Live/Esprits/Arduino Relay/outbox
+[27/01/2018 18:13:57.735] INFO - New correspondent in 'All messsages' : Teleprinter
+[27/01/2018 18:13:57.737] INFO - New topic in All messsages : Live/Camarades/Teleprinter/led
+[27/01/2018 18:14:04.162] INFO - Done
+[27/01/2018 18:14:04.168] INFO - Disconnected from MQTT server
+[27/01/2018 18:14:04.169] INFO - MQTT disconnected on request from 192.168.1.20:1883

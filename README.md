@@ -1,9 +1,10 @@
 
 
 
+
 # MQTT Observer
 
-MQTT client GUI to observe messages exchanged on MQTT server.
+Observer app to watch messages exchanged on MQTT server.
 
 ## Features
 
@@ -79,6 +80,9 @@ $ pyinstaller -F -n mqtt-observer -i src/observer.ico -w src/main.py
 ```
 You can run `build.bat` to automatize creation of `mqtt-observer.exe` file.
 
+#### Known issue:
+`mqtt-observer.exe` sometimes hangs at start, kill it and restart (running `python3 ./src/main.py` always work).
+
 ### Running
 
 Run `python main.py` or  `mqtt-observer.exe` (see usage below for command line options).
@@ -89,6 +93,7 @@ Command line options are possible for `main.py` and `mqtt-observer.exe`
 
 ```
 usage: mqtt-observer.exe [-h] [-f] [-d] [-l LOGGER]
+       python3 ./src/main.py [-h] [-f] [-d] [-l LOGGER]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -111,6 +116,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 This software was created for Escape Room 2.0 project at [Live Escape Grenoble, France](https://www.live-escape.net/).
 
 ## Screenshots on Windows and on Raspberry Pi
+
 
 ![Running on Windows](https://raw.githubusercontent.com/fauresystems/mqtt-observer/master/screenshots/mqtt-observer-screenshot.png)
 

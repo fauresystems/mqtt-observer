@@ -111,7 +111,7 @@ class ObserverWindow(QMainWindow):
 		self._mqttServerHost = self._host
 		self._mqttServerPort = self._port
 		self._mqttRootTopic = self._rootTopic
-		self._mqttSubTopic = '/#'
+		self._mqttSubTopic = '#'
 
 		if self._rootTopic:
 			self._mqttSubTopic = self._rootTopic + '/#'
@@ -414,7 +414,7 @@ class ObserverWindow(QMainWindow):
 			if self._rootTopic:
 				self._mqttSubTopic = self._rootTopic + '/#'
 			else:
-				self._mqttSubTopic = '/#'
+				self._mqttSubTopic = '#'
 			
 			cloud = self._mqttServerHost + ':' + str(self._mqttServerPort)
 
@@ -696,7 +696,7 @@ class ObserverWindow(QMainWindow):
 		self._mqttServerHost = self._host
 		self._mqttServerPort = self._port
 		self._mqttRootTopic = self._rootTopic
-		self._mqttSubTopic = '/#'
+		self._mqttSubTopic = '#'
 
 		if self._rootTopic:
 			self._mqttSubTopic = self._rootTopic + '/#'
@@ -943,7 +943,7 @@ class ObserverWindow(QMainWindow):
 		if self._rootTopic:
 			self._mqttSubTopic = self._rootTopic + '/#'
 		else:
-			self._mqttSubTopic = '/#'
+			self._mqttSubTopic = '#'
 
 		cloud = self._mqttServerHost + ':' + str(self._mqttServerPort)
 
