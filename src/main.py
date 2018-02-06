@@ -80,8 +80,6 @@ if platform.system() == 'Windows':
 		QApplication.setStyle(QStyleFactory.create("Fusion"))
 	else:
 		QApplication.setStyle(QStyleFactoryscreate("Windows"))
-else:
-	QApplication.setStyle(QStyleFactoryscreate("Windows"))
 
 app.setApplicationDisplayName("MQTT Observer")
 app.setApplicationName("MQTT Observer")
