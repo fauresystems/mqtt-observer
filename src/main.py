@@ -79,7 +79,9 @@ if platform.system() == 'Windows':
 	if QSysInfo.windowsVersion() > QSysInfo.WV_WINDOWS7:
 		QApplication.setStyle(QStyleFactory.create("Fusion"))
 	else:
-		QApplication.setStyle(QStyleFactoryscreate("Windows"))
+		QApplication.setStyle(QStyleFactory.create("Windows"))
+else:
+	QApplication.setStyle(QStyleFactory.create("Windows"))
 
 app.setApplicationDisplayName("MQTT Observer")
 app.setApplicationName("MQTT Observer")
