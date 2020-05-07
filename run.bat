@@ -21,7 +21,7 @@ if defined _OLD_CODEPAGE (
     set _OLD_CODEPAGE=
 )
 
-python src/main.py
+start pythonw src/main.py
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
