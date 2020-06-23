@@ -1,6 +1,6 @@
 #############################################################################
 ##
-## Copyright (C) 2017 Marie Faure <dev@fauresystems.com>
+## Copyright (C) 2017 Faure Systems <dev@fauresystems.com>
 ##
 ## Observer.pro (app to swatch MQTT activity).
 ##

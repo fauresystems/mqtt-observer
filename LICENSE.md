@@ -1,6 +1,6 @@
 ## MIT License
  
- Copyright (c) 2017 Marie Faure <dev@faure.systems>
+ Copyright (c) 2017 Faure Systems <dev@faure.systems>
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal

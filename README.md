@@ -105,7 +105,7 @@ optional arguments:
 
 ## Author
 
-* **Marie Faure** - *Initial work* - [<dev@fauresystems.com>](mailto:dev@fauresystems.com)
+* **Faure Systems** - *Initial work* - [<dev@fauresystems.com>](mailto:dev@fauresystems.com)
 
 ## License
 

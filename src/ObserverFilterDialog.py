@@ -5,7 +5,7 @@
 ##
 ## Observer filter dialog.
 ##
-## Copyright (C) 2017 Marie Faure <dev@fauresystems.com>
+## Copyright (C) 2017 Faure Systems <dev@fauresystems.com>
 ##
 ## Permission is hereby granted, free of charge, to any person obtaining a 
 ## copy of this software and associated documentation files (the "Software"), 
