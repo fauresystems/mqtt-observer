@@ -1,5 +1,5 @@
 /venv/
 /.idea/
 __pycache__/
-src/observer.log
-observer.log.*
+*.log
+
